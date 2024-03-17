@@ -2,18 +2,18 @@
 
 |  | Pemrograman Berbasis Framework 2024 |
 |--|--|
-| NIM |  2141720031 |
-| Nama |  Josafat Pratama Susilo |
+| NIM |  2141720080 |
+| Nama |  Muhammad Haikal Buldan |
 | Kelas | TI - 3A |
 
 ### Jawaban Soal 1
 
 Hal yang telah saya pelajari adalah:
 
-- Ketika ingin menggunakan remote image dengan src berupa URL, perlu menyertakan height dan width. Hal tersebut berguna untuk menentukan rasio dari gambar
-- Ketika ingin menggunakan remote image, perlu untuk melakukan setting pada file next.config.js atau next.config.mjs dan menambahkan domain dari gambar yang akan digunakan. Hal ini diperlukan untuk secara aman mengizinkan optimisasi gambar.
+- Penting untuk memasukkan ketinggian dan lebar ketika menggunakan gambar remote dengan URL sebagai sumber. Ini membantu menentukan proporsi gambar.
+- Untuk menggunakan gambar remote dengan aman dan mengizinkan optimisasi gambar, perlu melakukan penyesuaian pada file next.config.js atau next.config.mjs dengan menambahkan domain gambar yang akan digunakan.
 
-Cara saya untuk menyelesaikan error pada Soal 1 adalah menambahkan objek berikut:
+Cara untuk menyelesaikan error:
 ```typescript
     images: {
         remotePatterns: [
@@ -34,14 +34,14 @@ Hasil dari soal 1 adalah sebagai berikut
 
 ### Jawaban Soal 2
 
-Hal yang telah saya pelajari adalah terdapat 2 jenis import dan export komponen pada Next.js, yaitu:
+Saya telah mempelajari bahwa ada dua jenis impor dan ekspor komponen dalam Next.js:
 
-- Named
-- Default
+- Ekspor Beri Nama (Named)
+- Ekspor Default (Default)
 
-Dalam melakukan export komponen pada next.js, kita hanya boleh menggunakan export default 1 kali saja per file, sedangkan untuk named export, kita dapat melakukan export sebanyak mungkin. Kita juga dapat menggabungkan named dan default export dalam 1 file.
+Dalam penggunaan ekspor komponen di Next.js, kita hanya diperbolehkan menggunakan ekspor default satu kali per file, sementara untuk ekspor bernama, kita dapat melakukan ekspor sebanyak yang diperlukan. Kita juga dapat menggabungkan ekspor bernama dan default dalam satu file.
 
-Dalam menggunakan named export, ketika melakukan import, namanya harus sama dengan yang diexport. Sedangkan untuk default export, kita dapat memberikan nama apapun ketika melakukan import.
+Ketika menggunakan ekspor bernama, saat melakukan impor, nama yang digunakan harus sama dengan nama yang diekspor. Sedangkan untuk ekspor default, kita dapat memberikan nama apa pun saat melakukan impor.
 
 Hasil dari perubahan soal 2:
 
@@ -54,16 +54,17 @@ Terdapat sedikit perbedaan, namun hal ini hanya dikarenakan beda pendekatan layo
 Hasil dari perubahan soal 3 yang telah diperbaiki:
 ![Soal 3](assets-report/03.png)
 
-Yang telah saya pelajari adalah:
-- Dalam sebuah komponen pada penulisan jsx, jika terdapat lebih dari 1 tag yang bertumpuk harus ada container yang membungkus tag-tag tadi
-- Dalam penulisan jsx, setiap tag harus memiliki tag penutup
-- Dalam penulisan jsx, class diubah menjadi className
+Berikut yang telah saya pelajari:
 
-Error yang terjadi pada soal 3 ada beberpa, yaitu:
-- Tidak ada container yang membungkus tag-tag yang bertumpuk, saya menggunakan fragment untuk memperbaik error ini
-- Penulisan class yang seharusnya className
-- Tag <br> yang seharusnya memiliki tag penutup
-- Penempatan tag penutup `<b>` dan `<i>` yang tidak pada tempatnya
+- Saat menulis JSX, jika terdapat lebih dari satu elemen yang bersarang, diperlukan sebuah kontainer untuk membungkus elemen tersebut.
+- Setiap elemen dalam JSX harus memiliki tag penutup.
+- Saat menulis JSX, penggunaan kelas harus diganti dengan `className`.
+  
+Error yang muncul pada poin ketiga termasuk:
+- Ketidakhadiran kontainer yang membungkus elemen-elemen bertumpuk, yang dapat diperbaiki dengan menggunakan fragment.
+- Penggunaan `class` yang seharusnya diganti dengan `className`.
+- Tag `<br>` yang tidak memiliki tag penutup.
+- Penempatan tag penutup `<b>` dan `<i>` yang tidak sesuai dengan struktur yang benar.
 
 ### Jawaban Soal 4
 
